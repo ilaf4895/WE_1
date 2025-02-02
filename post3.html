@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Understanding CSS Flexbox</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>My Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="content-container">
+		<main>
+			<article class="post full-post">
+				<h2>Understanding CSS Flexbox</h2>
+				<p>CSS Flexbox is a powerful layout module that allows you to design complex layouts with simple and easy-to-use syntax. It enables flexible, dynamic layouts that adjust to different screen sizes, making it a must-know tool for responsive web design.</p>
+
+				<p>The main concept behind Flexbox is the ability to create fluid layouts where items can automatically adjust and align based on available space. It's extremely useful for building responsive designs, and once you get the hang of it, Flexbox becomes a go-to tool for many web designers and developers.</p>
+
+				<p>Here are the basic concepts of Flexbox:</p>
+				<ul>
+					<li><strong>Flex container</strong>: The parent element that holds the flex items.</li>
+					<li><strong>Flex items</strong>: The child elements within the flex container that are being arranged.</li>
+					<li><strong>Flex properties</strong>: Properties like `justify-content`, `align-items`, and `flex-grow` that control the positioning and sizing of the items inside the container.</li>
+				</ul>
+
+				<p>Here's a basic example of a Flexbox layout:</p>
+				<pre>
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item {
+	flex: 1;
+}
+				</pre>
+
+				<p>With Flexbox, you can easily create responsive designs without relying on complex CSS techniques like floats or positioning. It's an essential skill for modern web development!</p>
+			</article>
+		</main>
+
+		<aside class="sidebar">
+			<h3>Recent Posts</h3>
+			<ul>
+				<li><a href="post1.html">The Importance of Web Development</a></li>
+				<li><a href="post2.html">Introduction to JavaScript</a></li>
+				<li><a href="post3.html">Understanding CSS Flexbox</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<footer>
+		<p>&copy; <span id="current-year"></span> My Blog. All rights reserved.</p>
+	</footer>
+
+	<script>
+		document.getElementById("current-year").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Importance of Web Development</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>My Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="content-container">
+		<main>
+			<article class="post full-post">
+				<h2>The Importance of Web Development</h2>
+				<p>Web development is crucial in the digital age. In this post, we'll explore why learning web development is one of the best skills you can acquire today.</p>
+
+				<p>Web development involves creating websites or web applications. It combines creativity and technical skills, allowing you to bring ideas to life online. Without web developers, the internet wouldn’t be what it is today...</p>
+
+				<p>This is just the beginning! Stay tuned for more posts where we explore various web technologies and how they shape our digital experience.</p>
+			</article>
+		</main>
+
+		<aside class="sidebar">
+			<h3>Recent Posts</h3>
+			<ul>
+				<li><a href="post1.html">The Importance of Web Development</a></li>
+				<li><a href="post2.html">Introduction to JavaScript</a></li>
+				<li><a href="post3.html">Understanding CSS Flexbox</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<footer>
+		<p>&copy; <span id="current-year"></span> My Blog. All rights reserved.</p>
+	</footer>
+
+	<script>
+		document.getElementById("current-year").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>

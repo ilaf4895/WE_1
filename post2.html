@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction to JavaScript</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>My Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="content-container">
+		<main>
+			<article class="post full-post">
+				<h2>Introduction to JavaScript</h2>
+				<p>JavaScript is one of the most popular programming languages in the world, used to create dynamic content on web pages. It allows web developers to add interactivity, animations, and more to websites. In this post, we’ll explore the basics of JavaScript and why it's important to learn for any aspiring web developer.</p>
+
+				<p>JavaScript is a high-level, interpreted language, which means it's written in plain text and processed by the browser's JavaScript engine. Whether you're adding interactive forms, dynamic content updates, or controlling browser events, JavaScript is a key part of modern web development.</p>
+
+				<p>Some key features of JavaScript include:</p>
+				<ul>
+					<li>DOM Manipulation (Document Object Model)</li>
+					<li>Event Handling</li>
+					<li>Asynchronous Programming (AJAX, Promises, async/await)</li>
+				</ul>
+
+				<p>If you're looking to start your web development journey, JavaScript is a fantastic language to learn. Stay tuned for more tutorials and deeper dives into the language in future posts!</p>
+			</article>
+		</main>
+
+		<aside class="sidebar">
+			<h3>Recent Posts</h3>
+			<ul>
+				<li><a href="post1.html">The Importance of Web Development</a></li>
+				<li><a href="post2.html">Introduction to JavaScript</a></li>
+				<li><a href="post3.html">Understanding CSS Flexbox</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<footer>
+		<p>&copy; <span id="current-year"></span> My Blog. All rights reserved.</p>
+	</footer>
+
+	<script>
+		document.getElementById("current-year").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>

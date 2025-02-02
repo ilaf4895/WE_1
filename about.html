@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>My Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="content-container">
+		<main>
+			<section class="about-section">
+				<h2>About Us</h2>
+				<p>Welcome to our blog! Here, we share articles about web development, design, and technology. Our goal is to educate and inspire others to learn about the digital world.</p>
+				<p>We hope you enjoy our content and find it valuable for your learning journey!</p>
+			</section>
+			
+			<button id="more-info-btn">Show More Info</button>
+			<div id="more-info" style="display:none;">
+				<p>This blog was created by a group of passionate web developers who believe in the power of sharing knowledge. Stay tuned for more tutorials!</p>
+			</div>
+		</main>
+
+		<aside class="sidebar">
+			<h3>Recent Posts</h3>
+			<ul>
+				<li><a href="post1.html">The Importance of Web Development</a></li>
+				<li><a href="post2.html">Introduction to JavaScript</a></li>
+				<li><a href="post3.html">Understanding CSS Flexbox</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<footer>
+		<p>&copy; <span id="current-year"></span> My Blog. All rights reserved.</p>
+	</footer>
+
+	<script>
+		document.getElementById("current-year").textContent = new Date().getFullYear();
+
+		document.getElementById("more-info-btn").addEventListener("click", function() {
+			const moreInfo = document.getElementById("more-info");
+			if (moreInfo.style.display == "none") {
+				moreInfo.style.display = "block";
+			} else {
+				moreInfo.style.display = "none";
+			}
+		});
+	</script>
+</body>
+</html>

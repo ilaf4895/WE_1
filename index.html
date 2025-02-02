@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home - My Blog</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>Welcome to My Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="content-container">
+		<main>
+			<section class="blog-posts">
+				<article class="post">
+					<h2><a href="post1.html">The Importance of Web Development</a></h2>
+					<p class="post-excerpt">Learn about the significance of web development and how it can shape the future of the digital world.</p>
+					<a href="post1.html" class="read-more">Read More</a>
+				</article>
+
+				<article class="post">
+					<h2><a href="post2.html">Introduction to JavaScript</a></h2>
+					<p class="post-excerpt">An introduction to JavaScript for beginners and why it is essential in modern web development.</p>
+					<a href="post2.html" class="read-more">Read More</a>
+				</article>
+
+				<article class="post">
+					<h2><a href="post3.html">Understanding CSS Flexbox</a></h2>
+					<p class="post-excerpt">Dive into the world of CSS Flexbox and how it makes layout building easier.</p>
+					<a href="post3.html" class="read-more">Read More</a>
+				</article>
+			</section>
+		</main>
+
+		<aside class="sidebar">
+			<h3>Recent Posts</h3>
+			<ul>
+				<li><a href="post1.html">The Importance of Web Development</a></li>
+				<li><a href="post2.html">Introduction to JavaScript</a></li>
+				<li><a href="post3.html">Understanding CSS Flexbox</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<footer>
+		<p>&copy; <span id="current-year"></span> My Blog. All rights reserved.</p>
+	</footer>
+
+	<script>
+		document.getElementById("current-year").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
